@@ -7,6 +7,7 @@ export interface ButtonProps {
   size?: ButtonSize;
   plain?: boolean;
   round?: boolean;
+  link?: boolean;
   circle?: boolean;
   disabled?: boolean;
   loading?: boolean;
