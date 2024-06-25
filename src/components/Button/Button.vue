@@ -4,6 +4,7 @@
     class="ez-button"
     :class="{
       [`ez-button--${type}`]: type,
+      [`ez-button-link--${type}`]: type,
       [`ez-button--${size}`]: size,
       'is-plain': plain,
       'is-disabled': disabled,

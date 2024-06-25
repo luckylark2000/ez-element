@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button ref="buttonRef">Test Button</Button>
+    <Button>Test Button</Button>
     <Button plain>Test Button</Button>
     <Button round>Round Button</Button>
     <Button circle>EZ</Button>
@@ -18,7 +18,10 @@
     <Button size="large">Large</Button>
     <Button size="small">Small</Button><br /><br />
     <Button link>Link Button</Button>
-    <Button link type="primary" plain>Link Button</Button><br /><br />
+    <Button link type="danger">Link Button</Button>
+    <Button link type="success">Link Button</Button>
+    <Button link disabled>Disabled Link Button</Button>
+    <Button link disabled type="danger">Disabled Danger Link Button</Button><br /><br />
     <Button loading>Loading</Button>
     <Button icon="arrow-up" size="small">Info</Button>
   </div>

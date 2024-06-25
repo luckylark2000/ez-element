@@ -14,6 +14,10 @@
   --ez-button-active-bg-color: var(--ez-button-hover-bg-color);
   --ez-button-outline-color: var(--ez-color-primary-light-5);
   --ez-button-active-color: var(--ez-text-color-primary);
+  --ez-button-link-text-color: var(--ez-color-regular);
+  --ez-button-link-active-color: var(--ez-button-hover-text-color);
+  --ez-button-link-hover-text-color: var(--ez-color-primary-light-5);
+  --ez-button-link-disabled-text-color: var(--ez-disabled-text-color);
 }
 .ez-button {
   display: inline-flex;
@@ -41,6 +45,7 @@
   & + & {
     margin-left: 12px;
   }
+
   &:hover,
   &:focus {
     color: var(--ez-button-hover-text-color);
@@ -68,14 +73,7 @@
     border-radius: 50%;
     padding: 8px;
   }
-  /* link*/
-  &.is-link {
-    border-color: transparent;
-    color: var(--ez-button-text-color);
-    background: transparent;
-    padding: 2px;
-    height: auto;
-  }
+
   /*disabled*/
   &.is-disabled,
   &.is-disabled:hover,
@@ -118,6 +116,50 @@
     --ez-button-hover-bg-color: var(--ez-color-$(val));
     --ez-button-hover-border-color: var(--ez-color-$(val));
     --ez-button-active-text-color: var(--ez-color-white);
+  }
+}
+
+.ez-button.is-link {
+  border-color: transparent;
+  color: var(--ez-button-link-text-color);
+  /* color: var(--ez-color-danger); */
+  background: transparent;
+  padding: 2px;
+  height: auto;
+  &:hover {
+    color: var(--ez-button-link-hover-text-color);
+    /* color: var(--ez-color-danger-light-3); */
+    border-color: transparent;
+    background-color: transparent;
+    outline: none;
+  }
+  &:active {
+    color: var(--ez-button-link-active-color);
+    /* color: var(--ez-color-danger-dark-2); */
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  /* link状态下的disabled样式 */
+  /*disabled*/
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
+    color: var(--ez-button-link-disabled-text-color);
+    cursor: not-allowed;
+  }
+}
+
+/* 设置link按钮的样式 */
+@each $val in primary, success, warning, info, danger {
+  .ez-button-link--$(val) {
+    --ez-button-link-text-color: var(--ez-color-$(val));
+    --ez-button-link-active-color: var(--ez-color-$(val)-dark-2);
+    --ez-button-link-hover-text-color: var(--ez-color-$(val)-light-3);
+    --ez-button-link-disabled-text-color: var(--ez-color-$(val)-light-5);
   }
 }
 .ez-button--large {
