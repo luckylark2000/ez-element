@@ -89,6 +89,7 @@
     background-color: var(--ez-button-disabled-bg-color);
     border-color: var(--ez-button-disabled-border-color);
   }
+  /*在button内嵌icon时，增加间距*/
   [class*='ez-icon'] + span {
     margin-left: 6px;
   }

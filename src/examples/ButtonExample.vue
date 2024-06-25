@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Button ref="btnRef" type="primary" plain native-type="button">test</Button>
     <Button ref="buttonRef">Test Button</Button>
     <Button plain>Test Button</Button>
     <Button round>Round Button</Button>
@@ -19,18 +18,14 @@
     <Button size="large">Large</Button>
     <Button size="small">Small</Button><br /><br />
     <Button link>Link Button</Button>
-    <Button link type="primary" plain>Link Button</Button>
+    <Button link type="primary" plain>Link Button</Button><br /><br />
+    <Button loading>Loading</Button>
+    <Button icon="arrow-up" size="small">Info</Button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
 import Button from '@/components/Button/Button.vue';
-import type { ButtonInstance } from '@/components/Button/types';
-const btnRef = ref<ButtonInstance | null>(null);
-onMounted(() => {
-  console.log(btnRef.value?.ref);
-});
 </script>
 
 <style scoped></style>
