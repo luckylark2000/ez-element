@@ -7,7 +7,7 @@
       @click="handleClick"
     >
       <slot name="title">{{ title }}</slot>
-      <!-- 添加图标 -->
+      <Icon icon="angle-right" class="header-angle" />
     </div>
     <Transition name="slide" v-on="transitionEvents">
       <div class="ez-collapse-item__wrapper" v-show="isActive">
@@ -23,6 +23,7 @@
 import { computed, inject } from 'vue';
 import { type CollapseItemProps } from '@/components/Collapse/types';
 import { collapseContextKey } from './constant';
+import Icon from '@/components/Icon/Icon.vue';
 
 defineOptions({
   name: 'EzCollapseItem',

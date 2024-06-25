@@ -34,10 +34,12 @@
   }
   &.is-active {
     border-bottom-color: transparent;
+    /* 旋转头部的箭头 */
     .header-angle {
       transform: rotate(90deg);
     }
   }
+  /* 头部箭头过度动画时间 */
   .header-angle {
     transition: transform var(--ez-transition-duration);
   }
