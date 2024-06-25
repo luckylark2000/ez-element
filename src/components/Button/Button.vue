@@ -26,16 +26,7 @@ import { type ButtonProps } from './types';
 
 defineOptions({ name: 'EzButton' });
 withDefaults(defineProps<ButtonProps>(), {
-  // size: 'normal',
-  // type: 'primary',
-  // circle: false,
-  // round: false,
-  // link: false,
-  // plain: false,
-  // disabled: false,
-  // loading: false,
   nativeType: 'button',
-  // autofocus: false,
 });
 
 const _ref = ref<HTMLButtonElement | null>(null);
