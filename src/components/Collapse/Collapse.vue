@@ -5,26 +5,31 @@
 </template>
 
 <script setup lang="ts">
-import { provide, ref } from 'vue';
-import { type NameType } from '@/components/Collapse/types';
+import { provide } from 'vue';
+import { type CollapseProps, type NameType } from '@/components/Collapse/types';
 import { collapseContextKey } from './constant';
 
 defineOptions({
   name: 'EzCollapse',
 });
-
-const activeNames = ref<NameType[]>([]);
+const activeNames = defineModel<NameType[]>('modelValue', { default: () => [] });
+//实现v-model、实现手风琴、修复延时修改响应式失效
+const props = defineProps<CollapseProps>();
 
 const handleItemClick = (ItemName: NameType) => {
-  const index = activeNames.value.indexOf(ItemName);
-  if (index > -1) {
-    activeNames.value.splice(index, 1);
+  if (props.accordion) {
+    activeNames.value = activeNames.value.includes(ItemName) ? [] : [ItemName];
   } else {
-    activeNames.value.push(ItemName);
+    const index = activeNames.value.indexOf(ItemName);
+    if (index > -1) {
+      activeNames.value.splice(index, 1);
+    } else {
+      activeNames.value.push(ItemName);
+    }
   }
 };
 provide(collapseContextKey, { activeNames, handleItemClick });
-provide('handleItemClick', handleItemClick);
+// provide('handleItemClick', handleItemClick);
 </script>
 
 <style scoped></style>

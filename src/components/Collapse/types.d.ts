@@ -9,8 +9,14 @@ export interface CollapseItemProps {
 }
 
 export interface CollapseProps {
+  /**
+   * 手风琴效果
+   */
   accordion?: boolean;
-  modelValue?: string[];
+  /**
+   * 当前激活面板的 name
+   */
+  modelValue?: NameType[];
 }
 
 export interface CollapseItemState {

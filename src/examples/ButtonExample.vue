@@ -4,7 +4,7 @@
     <Button ref="buttonRef">Test Button</Button>
     <Button plain>Test Button</Button>
     <Button round>Round Button</Button>
-    <Button circle>VK</Button>
+    <Button circle>EZ</Button>
     <Button disabled>Disabled Button</Button><br /><br />
     <Button type="primary">Primary</Button>
     <Button type="success">Success</Button>
