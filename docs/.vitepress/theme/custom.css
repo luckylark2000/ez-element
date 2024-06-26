@@ -1,0 +1,25 @@
+//覆盖默认主题样式
+:root {
+  --vp-c-brand-1: var(--ez-color-primary);
+  --vp-c-brand-2: var(--ez-color-primary-light-3);
+  --vp-c-brand-3: var(--ez-color-primary-dark-2);
+}
+
+/* 修改代码块背景色为vitepress默认代码块背景颜色 */
+div[class*='language-'] {
+  --component-preview-bg: var(--vp-code-block-bg);
+}
+
+body {
+  color: var(--vp-c-text-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--vp-c-text-1);
+}

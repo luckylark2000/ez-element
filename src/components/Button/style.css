@@ -63,6 +63,8 @@
     --ez-button-hover-text-color: var(--ez-color-primary);
     --ez-button-hover-bg-color: var(--ez-fill-color-blank);
     --ez-button-hover-border-color: var(--ez-color-primary);
+
+    /* TODO待修复disabled样式 */
   }
   /*round*/
   &.is-round {
