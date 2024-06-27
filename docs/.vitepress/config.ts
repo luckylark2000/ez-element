@@ -50,6 +50,10 @@ export default defineConfig({
         text: 'Basic',
         items: [{ text: 'Button', link: '/components/button' }],
       },
+      {
+        text: 'Data 数据展示',
+        items: [{ text: 'Collapse 折叠面板', link: '/components/collapse' }],
+      },
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/luckylark2000/ez-element' }],

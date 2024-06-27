@@ -14,6 +14,6 @@
     <Button size="small" round icon="search"> Small </Button>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import Button from '@/components/Button/Button.vue';
 </script>

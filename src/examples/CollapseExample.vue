@@ -4,7 +4,7 @@
     <CollapseItem name="b" title="second item b"> 第二个</CollapseItem>
     <CollapseItem name="c" disabled>
       <template #title>
-        <p>this is c,have been disabled</p>
+        <div>this is c,have been disabled</div>
       </template>
       <div>第三个内容</div>
     </CollapseItem>

@@ -1,7 +1,3 @@
-<script setup>
-import Button from '@/components/Button/Button.vue';
-import Icon from '@/components/Icon/Icon.vue';
-</script>
 <template>
   <Button> hello </Button>
   <Button type="primary"> Primary </Button>
@@ -31,4 +27,7 @@ import Icon from '@/components/Icon/Icon.vue';
   <Button type="warning" circle> <Icon icon="star" /> </Button>
   <Button type="danger" circle> <Icon icon="star" /> </Button>
 </template>
-<style></style>
+<script setup lang="ts">
+import Button from '@/components/Button/Button.vue';
+import Icon from '@/components/Icon/Icon.vue';
+</script>

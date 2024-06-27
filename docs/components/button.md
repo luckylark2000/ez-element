@@ -68,7 +68,9 @@ demo-preview=../demos/button/size.vue
 
 :::
 
-## Button Attributes
+## Button API
+
+### Button Attributes
 
 | Name        | Description           | Type                                                             | Default |
 | ----------- | --------------------- | ---------------------------------------------------------------- | ------- |
@@ -82,3 +84,9 @@ demo-preview=../demos/button/size.vue
 | icon        | 图标组件              | `string`                                                         | —       |
 | autofocus   | 原生 `autofocus` 属性 | `boolean`                                                        | false   |
 | native-type | 原生 `type` 属性      | `enum` - `'button'\| 'submit'\| 'reset'`                         | button  |
+
+### Button Slots
+
+| 插槽名  | 说明           |
+| ------- | -------------- |
+| default | 自定义默认内容 |

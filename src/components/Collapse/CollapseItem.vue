@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import type { CollapseItemProps } from '@/components/Collapse/types';
+import type { CollapseItemProps } from '@/components/Collapse/types.d.ts';
 import { collapseContextKey } from './constant';
 import Icon from '@/components/Icon/Icon.vue';
 
