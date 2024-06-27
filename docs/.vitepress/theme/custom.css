@@ -1,4 +1,4 @@
-//覆盖默认主题样式
+/* 覆盖默认主题样式 */
 :root {
   --vp-c-brand-1: var(--ez-color-primary);
   --vp-c-brand-2: var(--ez-color-primary-light-3);

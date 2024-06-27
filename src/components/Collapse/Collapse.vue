@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { provide } from 'vue';
-import { type CollapseProps, type NameType } from '@/components/Collapse/types';
+import type { CollapseProps, NameType } from '@/components/Collapse/types.d.ts';
 import { collapseContextKey } from './constant';
 
 defineOptions({
