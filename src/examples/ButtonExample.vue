@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button>Test Button</Button>
+    <ez-button>Test Button</ez-button>
     <Button plain>Test Button</Button>
     <Button round>Round Button</Button>
     <Button circle>EZ</Button>
