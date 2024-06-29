@@ -1,6 +1,6 @@
 import type { App } from 'vue';
-import Button from './components/Button';
-import Collapse, { CollapseItem } from './components/Collapse';
+import Button from '@/components/Button';
+import Collapse, { CollapseItem } from '@/components/Collapse';
 
 const components = [Button, Collapse, CollapseItem];
 
