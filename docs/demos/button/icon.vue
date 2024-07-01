@@ -1,8 +1,5 @@
 <template>
   <div class="icon block">
-    <Button icon="star"> Star Button </Button>
+    <ez-button icon="star"> Star ez-button </ez-button>
   </div>
 </template>
-<script setup lang="ts">
-import Button from '@/components/Button/Button.vue';
-</script>

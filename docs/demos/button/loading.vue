@@ -1,8 +1,5 @@
 <template>
   <div class="loading block">
-    <Button loading> Loading... </Button>
+    <ez-button loading> Loading... </ez-button>
   </div>
 </template>
-<script setup lang="ts">
-import Button from '@/components/Button/Button.vue';
-</script>

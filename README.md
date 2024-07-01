@@ -2,7 +2,7 @@
 
 EzElement 是一款自己学习使用的Vue3前端组件库，让搭建组件库不再神秘。
 
-[文档地址]()
+[文档](https://luckylark2000.github.io/ez-element/)
 
 ## 安装
 
@@ -41,6 +41,16 @@ app.mount('#app');
 ```
 
 ## 使用组件
+
+组件一旦全局注册，直接在SFC中使用即可，详情请见[文档](https://luckylark2000.github.io/ez-element/)
+
+基础示例：
+
+```html
+<ez-button>Test Button</ez-button>
+<ez-button plain>Test Button</ez-button>
+<ez-button type="danger" loading>Test Button</ez-button>
+```
 
 ## Recommended IDE Setup
 

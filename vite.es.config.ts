@@ -21,6 +21,7 @@ export default defineConfig({
         '@fortawesome/fontawesome-svg-core',
         '@fortawesome/free-solid-svg-icons',
         '@fortawesome/vue-fontawesome',
+        '@goodlark/ez-element',
       ], // 排除项
       output: {
         assetFileNames: (chunkInfo) => {

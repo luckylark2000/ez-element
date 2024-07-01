@@ -1,33 +1,28 @@
 <template>
-  <Button> hello </Button>
-  <Button type="primary"> Primary </Button>
-  <Button type="success"> Success </Button>
-  <Button type="info"> Info </Button>
-  <Button type="warning"> Warning </Button>
-  <Button type="danger"> Danger </Button><br /><br />
+  <ez-button> hello </ez-button>
+  <ez-button type="primary"> Primary </ez-button>
+  <ez-button type="success"> Success </ez-button>
+  <ez-button type="info"> Info </ez-button>
+  <ez-button type="warning"> Warning </ez-button>
+  <ez-button type="danger"> Danger </ez-button><br /><br />
+  <ez-button plain> hello </ez-button>
+  <ez-button type="primary" plain> Primary </ez-button>
+  <ez-button type="success" plain> Success </ez-button>
+  <ez-button type="info" plain> Info </ez-button>
+  <ez-button type="warning" plain> Warning </ez-button>
+  <ez-button type="danger" plain> Danger </ez-button><br /><br />
 
-  <Button plain> hello </Button>
-  <Button type="primary" plain> Primary </Button>
-  <Button type="success" plain> Success </Button>
-  <Button type="info" plain> Info </Button>
-  <Button type="warning" plain> Warning </Button>
-  <Button type="danger" plain> Danger </Button><br /><br />
+  <ez-button round> hello </ez-button>
+  <ez-button type="primary" round> Primary </ez-button>
+  <ez-button type="success" round> Success </ez-button>
+  <ez-button type="info" round> Info </ez-button>
+  <ez-button type="warning" round> Warning </ez-button>
+  <ez-button type="danger" round> Danger </ez-button><br /><br />
 
-  <Button round> hello </Button>
-  <Button type="primary" round> Primary </Button>
-  <Button type="success" round> Success </Button>
-  <Button type="info" round> Info </Button>
-  <Button type="warning" round> Warning </Button>
-  <Button type="danger" round> Danger </Button><br /><br />
-
-  <Button circle> <Icon icon="star" /> </Button>
-  <Button type="primary" circle> <Icon icon="star" /> </Button>
-  <Button type="success" circle> <Icon icon="star" /> </Button>
-  <Button type="info" circle> <Icon icon="star" /> </Button>
-  <Button type="warning" circle> <Icon icon="star" /> </Button>
-  <Button type="danger" circle> <Icon icon="star" /> </Button>
+  <ez-button circle> <ez-icon icon="star" /> </ez-button>
+  <ez-button type="primary" circle> <ez-icon icon="star" /> </ez-button>
+  <ez-button type="success" circle> <ez-icon icon="star" /> </ez-button>
+  <ez-button type="info" circle> <ez-icon icon="star" /> </ez-button>
+  <ez-button type="warning" circle> <ez-icon icon="star" /> </ez-button>
+  <ez-button type="danger" circle> <ez-icon icon="star" /> </ez-button>
 </template>
-<script setup lang="ts">
-import Button from '@/components/Button/Button.vue';
-import Icon from '@/components/Icon/Icon.vue';
-</script>

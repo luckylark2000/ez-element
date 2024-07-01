@@ -15,7 +15,7 @@ export default defineConfig({
       formats: ['umd'],
     },
     rollupOptions: {
-      external: ['vue'], // 排除项
+      external: ['vue', '@goodlark/ez-element'], // 排除项
       output: {
         exports: 'named', // 导出类型
         globals: {

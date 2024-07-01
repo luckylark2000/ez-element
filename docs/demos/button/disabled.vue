@@ -1,14 +1,10 @@
 <template>
   <div>
-    <Button disabled>Default</Button>
-    <Button type="primary" disabled>Primary</Button>
-    <Button type="success" disabled>Success</Button>
-    <Button type="info" disabled>Info</Button>
-    <Button type="warning" disabled>Warning</Button>
-    <Button type="danger" disabled>Danger</Button>
+    <ez-button disabled>Default</ez-button>
+    <ez-button type="primary" disabled>Primary</ez-button>
+    <ez-button type="success" disabled>Success</ez-button>
+    <ez-button type="info" disabled>Info</ez-button>
+    <ez-button type="warning" disabled>Warning</ez-button>
+    <ez-button type="danger" disabled>Danger</ez-button>
   </div>
 </template>
-
-<script setup lang="ts">
-import Button from '@/components/Button/Button.vue';
-</script>

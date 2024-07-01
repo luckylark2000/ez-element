@@ -48,8 +48,11 @@ export default defineConfig({
         items: [{ text: '什么是 Ez Element', link: '/introduce' }],
       },
       {
-        text: 'Basic',
-        items: [{ text: 'Button', link: '/components/button' }],
+        text: 'Basic 基础组件',
+        items: [
+          { text: 'Button', link: '/components/button' },
+          { text: 'Icon', link: '/components/icon' },
+        ],
       },
       {
         text: 'Data 数据展示',

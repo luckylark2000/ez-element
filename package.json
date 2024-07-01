@@ -1,6 +1,6 @@
 {
   "name": "@goodlark/ez-element",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Vue3 components library",
   "type": "module",
   "author": "Estar Zhang",
@@ -47,6 +47,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@goodlark/ez-element": "^1.1.1",
     "lodash-es": "^4.17.21",
     "postcss-color-mix": "^1.1.0",
     "postcss-for": "^2.1.1"

@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: 'Ez Element'
-  text: '一个 Vue3 的高仿 Element plus 组件库'
+  text: '一个 Vue3 组件库'
   tagline: 简单的 UI 组件库
   actions:
     - theme: brand
