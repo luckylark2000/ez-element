@@ -53,6 +53,13 @@
     background-color: var(--ez-button-hover-bg-color);
     outline: none;
   }
+  /*鼠标点击后移开，恢复本身样式*/
+  &:focus:not(&:hover) {
+    color: var(--ez-button-text-color);
+    border-color: var(--ez-button-border-color);
+    background-color: var(--ez-button-bg-color);
+    outline: none;
+  }
   &:active {
     color: var(--ez-button-active-text-color);
     border-color: var(--ez-button-active-border-color);
@@ -141,7 +148,13 @@
     border-color: transparent;
     background-color: transparent;
   }
-
+  /*link状态下鼠标点击后移开，恢复本身样式*/
+  &:focus:not(&:hover) {
+    color: var(--ez-button-link-text-color);
+    border-color: transparent;
+    background-color: transparent;
+    outline: none;
+  }
   /* link状态下的disabled样式 */
   /*disabled*/
   &.is-disabled,
