@@ -14,15 +14,20 @@
       "import": "./dist/es/ez-element.js",
       "require": "./dist/umd/ez-element.umd.cjs",
       "types": "./dist/types/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "run-p build-only:es build-only:umd",
+    "build": "pnpm run build-only && pnpm run move-style",
     "preview": "vite preview",
-    "build-only": "vite build",
+    "build-only": "run-p build-only:es build-only:umd",
     "build-only:es": "vite build --config vite.es.config.ts",
     "build-only:umd": "vite build --config vite.umd.config.ts",
+    "move-style": "move-file dist/es/index.css dist/index.css",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
@@ -37,7 +42,7 @@
     "lodash-es": "^4.17.21",
     "postcss-color-mix": "^1.1.0",
     "postcss-for": "^2.1.1",
-    "vue": "^3.4.29"
+    "vue": "3.4.30"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
@@ -53,6 +58,7 @@
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "move-file-cli": "^3.0.0",
     "npm-run-all2": "^6.2.0",
     "postcss": "^8.4.38",
     "postcss-each": "^1.1.0",

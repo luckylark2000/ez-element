@@ -1,4 +1,4 @@
-import type { App } from 'vue';
+import type { App, Plugin } from 'vue';
 import Button from '@/components/Button';
 import Collapse, { CollapseItem } from '@/components/Collapse';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -10,7 +10,7 @@ library.add(fas);
 
 const components = [Button, Collapse, CollapseItem];
 
-const installComponents = {
+const installComponents: Plugin = {
   install(app: App) {
     components.forEach((component) => {
       app.component(component.name as string, component);
