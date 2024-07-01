@@ -1,6 +1,46 @@
-# ez-element
+# 使用 Vue3.4 TS5 的前端组件库
 
-This template should help get you started developing with Vue 3 in Vite.
+EzElement 是一款自己学习使用的Vue3前端组件库，让搭建组件库不再神秘。
+
+[文档地址]()
+
+## 安装
+
+```bash
+pnpm i @goodlark/ez-element --save
+```
+
+## 注册组件
+
+main.ts 全局注册全部组件
+
+```ts
+import '@goodlark/ez-element/dist/index.css';
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import EzElement from '@goodlark/ez-element';
+
+const app = createApp(App);
+app.use(EzElement);
+app.mount('#app');
+```
+
+main.ts 全局注册单个组件
+
+```ts
+import '@goodlark/ez-element/dist/index.css';
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import EzButton from '@goodlark/ez-element';
+
+const app = createApp(App);
+app.use(EzButton);
+app.mount('#app');
+```
+
+## 使用组件
 
 ## Recommended IDE Setup
 
