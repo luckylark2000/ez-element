@@ -45,7 +45,10 @@ export default defineConfig({
     sidebar: [
       {
         text: '简介',
-        items: [{ text: '什么是 Ez Element', link: '/introduce' }],
+        items: [
+          { text: '什么是 Ez Element', link: '/introduce' },
+          { text: '安装和快速起步', link: '/install' },
+        ],
       },
       {
         text: 'Basic 基础组件',
