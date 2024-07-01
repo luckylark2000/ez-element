@@ -42,7 +42,7 @@
     "docs:preview": "vitepress preview docs",
     "prepublishOnly": "pnpm run build"
   },
-  "packageManager": "pnpm@latest",
+  "packageManager": "pnpm@9.1.1",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
