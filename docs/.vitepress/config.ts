@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from 'node:url';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Ez Element',
+  base: '/ez-element/',
   description: 'A Vue3 UI components library',
   vite: {
     resolve: {
