@@ -1,7 +1,7 @@
 <template>
   <ez-collapse v-model="opens" accordion>
     <ez-collapse-item name="a" title="first item a"> 第一个</ez-collapse-item>
-    <CollapseItem name="b" title="second item b"> 第二个</CollapseItem>
+    <ez-collapse-item name="b" title="second item b"> 第二个</ez-collapse-item>
     <CollapseItem name="c" disabled>
       <template #title>
         <div>this is c,have been disabled</div>
