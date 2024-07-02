@@ -18,8 +18,8 @@ importers:
         specifier: ^3.0.8
         version: 3.0.8(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.4.30(typescript@5.4.5))
       '@goodlark/ez-element':
-        specifier: ^1.1.3
-        version: 1.1.3(vue@3.4.30(typescript@5.4.5))
+        specifier: 1.1.5
+        version: 1.1.5(vue@3.4.30(typescript@5.4.5))
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -524,8 +524,8 @@ packages:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       vue: '>= 3.0.0 < 4'
 
-  '@goodlark/ez-element@1.1.3':
-    resolution: {integrity: sha512-/N6GmTsTLIBkhyeRVPkK4CFmes1T9OCT2K2KAGhuQzqEotwdeLhBSYdcC7h25FjGyT7pfSytr4YBz8+e6XU8qA==}
+  '@goodlark/ez-element@1.1.5':
+    resolution: {integrity: sha512-GcJ/Asfq9m+UBZakDAuK/Mg1slS2y6QZBfTFqN2Yg3LTjiwrnUjIiPUlwA44W3V45wyczL7Uxnk5PvFI5VWxgQ==}
     peerDependencies:
       vue: ^3.4.30
 
@@ -2857,7 +2857,7 @@ snapshots:
       '@fortawesome/fontawesome-svg-core': 6.5.2
       vue: 3.4.30(typescript@5.4.5)
 
-  '@goodlark/ez-element@1.1.3(vue@3.4.30(typescript@5.4.5))':
+  '@goodlark/ez-element@1.1.5(vue@3.4.30(typescript@5.4.5))':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.5.2
       '@fortawesome/free-solid-svg-icons': 6.5.2
