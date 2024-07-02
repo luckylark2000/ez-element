@@ -38,9 +38,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.19.0
-          cache: pnpm # 或 pnpm / yarn
+          # cache: pnpm # 或 pnpm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: remove node_modules
+        uses: rm -rf node_modules
+      - name: remove lockfile
+        uses: rm -rf pnpm-lock.yaml
       - name: Install dependencies
         run: pnpm install # 或 npm ci / yarn install / bun install
       - name: Build with VitePress
