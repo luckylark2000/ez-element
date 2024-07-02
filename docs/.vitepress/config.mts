@@ -5,15 +5,8 @@ import { fileURLToPath, URL } from 'node:url';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Ez Element',
-  base: '/ez-element/',
+  base: '/ez-element-doc/',
   description: 'A Vue3 UI components library',
-  vite: {
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('../../src', import.meta.url)),
-      },
-    },
-  },
   markdown: {
     config(md) {
       md.use(containerPreview);
