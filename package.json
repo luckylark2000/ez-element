@@ -38,7 +38,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "docs:dev": "npm run dev --prefix docs",
-    "docs:install": "npm run init --frozen-lockfile --prefix docs",
+    "docs:install": "npm run init --prefix docs",
     "docs:build": " npm start --prefix docs",
     "docs:preview": "npm run preview --prefix docs",
     "prepublishOnly": "pnpm run build"
