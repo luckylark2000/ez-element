@@ -37,9 +37,9 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "docs:dev": "npm run dev --prefix docs",
-    "docs:build": "npm start --prefix docs",
-    "docs:preview": "npm run preview --prefix docs",
+    "docs:dev": "pnpm run dev --prefix docs",
+    "docs:build": "pnpm run start --prefix docs",
+    "docs:preview": "pnpm run preview --prefix docs",
     "prepublishOnly": "pnpm run build"
   },
   "packageManager": "pnpm@9.1.1",
