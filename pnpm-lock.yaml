@@ -20,12 +20,6 @@ importers:
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
-      postcss-color-mix:
-        specifier: ^1.1.0
-        version: 1.1.0
-      postcss-for:
-        specifier: ^2.1.1
-        version: 2.1.1
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -75,12 +69,18 @@ importers:
       postcss:
         specifier: ^8.4.38
         version: 8.4.39
+      postcss-color-mix:
+        specifier: ^1.1.0
+        version: 1.1.0
       postcss-each:
         specifier: ^1.1.0
         version: 1.1.0(postcss@8.4.39)
       postcss-each-variables:
         specifier: ^0.3.0
         version: 0.3.0
+      postcss-for:
+        specifier: ^2.1.1
+        version: 2.1.1
       postcss-nested:
         specifier: ^6.0.1
         version: 6.0.1(postcss@8.4.39)
